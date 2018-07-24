@@ -1,0 +1,16 @@
+{
+  "name": "mongoose-blog-project",
+  "version": "1.0.0",
+  "description": "integrating mongoose into blog app",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Scott Reyell",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mongoose": "^5.2.5",
+    "morgan": "^1.9.0"
+  }
+}
