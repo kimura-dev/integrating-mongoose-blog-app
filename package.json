@@ -4,6 +4,7 @@
   "description": "integrating mongoose into blog app",
   "main": "index.js",
   "scripts": {
+    "start": "node server.js",
     "test": "mocha"
   },
   "author": "Scott Reyell",

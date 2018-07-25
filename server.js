@@ -3,6 +3,7 @@
 const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
+
 mongoose.Promise = global.Promise;
 
 const { DATABASE_URL, PORT } = require('./config');
@@ -96,7 +97,7 @@ app.put('/posts/:id', (req, res) => {
 });
 
 
-app.delete('/:id', (req, res) => {
+app.delete('/posts/:id', (req, res) => {
   BlogPost
     .findByIdAndRemove(req.params.id)
     .then(() => {
